@@ -8,5 +8,5 @@
 require 'faker'
 require 'factory_bot_rails'
 
-FactoryBot.create_list(:user, 20 )
-FactoryBot.create_list(:todo, 20 )
+FactoryBot.create_list(:user, 20)
+FactoryBot.create_list(:todo, 20, user: User.all.sample)
